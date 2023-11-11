@@ -28,7 +28,7 @@ public class IterableWithPolicyImpl<T> implements IterableWithPolicy<T>{
                 }
             
         });
-    }
+    } 
     
     /**
      * 2-ary
@@ -38,7 +38,6 @@ public class IterableWithPolicyImpl<T> implements IterableWithPolicy<T>{
     public IterableWithPolicyImpl(T[] elements, Predicate<T> filter){
         this.elements = elements;
         this.filter = filter;
-
     }
     @Override
     public Iterator<T> iterator() {
